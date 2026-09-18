@@ -20,10 +20,10 @@ resource "azurerm_linux_virtual_machine" "vms" {
     azurerm_network_interface.nics[each.key].id
   ]
 
-  admin_username = each.value.admin_username
-  admin_password = each.value.admin_password
-  size           = each.value.vm_size
-
+  admin_username                  = each.value.admin_username
+  admin_password                  = each.value.admin_password
+  size                            = each.value.vm_size
+  disable_password_authentication = "false"
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
