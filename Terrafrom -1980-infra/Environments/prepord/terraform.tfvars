@@ -10,10 +10,10 @@ rgs = {
 }
 vnets = {
   vnet1 = {
-    name                = "Star-network"
-    location            = "japaneast"
-    resource_group_name = "tech"
-    address_space       = ["10.0.0.0/16"]
+        name                = "Star-network"
+        location            = "japaneast"
+        resource_group_name = "tech"
+        address_space       = ["10.0.0.0/16"]
   }
 
   vnet2 = {
