@@ -5,7 +5,15 @@ terraform {
       version = "5.0.0"
     }
   }
+  backend "azurerm" {
+    resource_group_name  = "Ez-rg"
+    storage_account_name = "ezstorage007"
+    container_name       = "tfstate"
+    key                  = "dev.terraform.tfstate"
+  }
+
 }
+
 
 provider "azurerm" {
   features {}
