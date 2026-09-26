@@ -6,8 +6,8 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = "Ez-rg"
-    storage_account_name = "ezstorage007"
+    resource_group_name  = "ril-rg"
+    storage_account_name = "rilstorage22092026"
     container_name       = "tfstate"
     key                  = "dev.terraform.tfstate"
   }
